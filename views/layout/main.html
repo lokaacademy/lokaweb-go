@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#000000" />
+        <link rel="shortcut icon" href="public/assets/images/loka-icon.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="public/assets/images/loka-icon.jpg"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
+    <!-- Meta tags for sharing on social media -->
+    <meta property="og:title" content="Loka Academy">
+    <meta property="og:description" content="Buka potensimu dengan program pembelajaran keren di Loka Academy! Ikuti kursus seru dari mentor-mantor keren yang ahli di bidangnya. Capai cita-citamu dengan gaya kekinian dan teman-teman seru di komunitas pembelajar kami. Ayo, jangan ketinggalan, mari berpetualang dalam dunia pengetahuan bersama Loka Academy!">
+    <meta property="og:image" content="https://lokaacademy.com/public/assets/images/social-card.jpeg">
+    <meta property="og:url" content="https://www.lokaacademy.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter card meta tags -->
+    <meta name="twitter:title" content="Loka Academy">
+    <meta name="twitter:description" content="Buka potensimu dengan program pembelajaran keren di Loka Academy! Ikuti kursus seru dari mentor-mantor keren yang ahli di bidangnya. Capai cita-citamu dengan gaya kekinian dan teman-teman seru di komunitas pembelajar kami. Ayo, jangan ketinggalan, mari berpetualang dalam dunia pengetahuan bersama Loka Academy!">
+    <meta name="twitter:image" content="https://lokaacademy.com/public/assets/images/social-card.jpeg">
+    <meta name="twitter:card" content="lokaacademy">
+
+    <!-- WhatsApp meta tags -->
+    <meta property="og:site_name" content="Loka Academy">
+    <meta property="og:title" content="Loka Academy">
+    <meta property="og:description" content="Buka potensimu dengan program pembelajaran keren di Loka Academy! Ikuti kursus seru dari mentor-mantor keren yang ahli di bidangnya. Capai cita-citamu dengan gaya kekinian dan teman-teman seru di komunitas pembelajar kami. Ayo, jangan ketinggalan, mari berpetualang dalam dunia pengetahuan bersama Loka Academy!">
+    <meta property="og:image" content="https://lokaacademy.com/public/assets/images/social-card.jpeg">
+    <meta property="og:url" content="https://www.lokaacademy.com">
+    
+    <title>Loka Academy</title>
+    {{ getCssAsset "css/app.css" }}
+
+
+</head>
+
+<body>
+    <main>
+        <div class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-center px-2 py-3 ">
+            {{ template "partials/logo" }}
+        </div>
+          
+        <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+          {{ template "partials/banner" }}
+        </div>
+        <section class="pb-20 bg-gray-300 -mt-24">
+            {{ template "partials/concepts" }}
+        </section>
+        <section class="relative py-20">
+            {{ template "partials/portofolio" }}
+        </section>
+        <section class="pt-20 pb-48">
+            {{ template "partials/team" }}
+        </section>
+        <section class="pb-20 relative block bg-gray-900">
+            {{ template "partials/benefit" }}
+        </section>
+        <footer class="relative bg-gray-300 pt-8 pb-6">
+            {{ template "partials/footer" }}
+        </footer>
+    </main>
+</body>
+
+</html>
