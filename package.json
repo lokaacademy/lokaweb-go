@@ -2,9 +2,9 @@
     "name": "template-asset-bundling",
     "scripts": {
         "predev": "npm run clean",
-        "dev": "parcel watch --dist-dir ./public/assets/css/ assets/**/*",
+        "dev": "parcel watch --no-cache --dist-dir ./public/assets/css/ assets/**/*",
         "prebuild": "npm run clean",
-        "build": "parcel build --no-source-maps --dist-dir ./public/assets/css/ assets/**/*",
+        "build": "parcel build --no-cache --no-source-maps --dist-dir ./public/assets/css/ assets/**/*",
         "clean": "rm -rf ./public/assets/css"
     },
     "devDependencies": {
